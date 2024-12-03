@@ -7,12 +7,11 @@ This file is part of camp.
 For details about use and distribution, please read LICENSE and NOTICE from
 http://github.com/llnl/camp
 */
-
+#ifndef __HERO_1
 #include <camp/camp.hpp>
 #include <stdexcept>
 #include <string>
 #include <exception>
-
 
 namespace camp
 {
@@ -69,3 +68,6 @@ hipError_t hipAssert(hipError_t code,
 #endif  //#ifdef CAMP_ENABLE_HIP
 
 }  // namespace camp
+
+
+#endif
